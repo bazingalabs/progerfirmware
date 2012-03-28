@@ -1,0 +1,10 @@
+LUFA
+*.o
+*.hex
+*.elf
+*.eep
+*.lss
+*.lst
+*.map
+*.sym
+.dep
