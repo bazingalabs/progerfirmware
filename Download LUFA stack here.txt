@@ -1,1 +1,3 @@
-Download LUFA stack here
+Download LUFA 100807 stack here
+
+unzip and copy the folder LUFA-100807/LUFA to this directory
