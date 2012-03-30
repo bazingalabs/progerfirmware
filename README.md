@@ -9,7 +9,7 @@ In onrder to program the Proger you'll need some devise to program an Amega328 u
 the AVR ISP mkII or a clone of some kind.
 
 
-# Programming the bootloader
+## Programming the bootloader
 
 * First clone this repository
 * Make sure you have avr-gcc installed and make
@@ -20,7 +20,7 @@ the AVR ISP mkII or a clone of some kind.
 * Check if the device enumerates as a Proger DFU device
 
 
-# Programming the firmware
+## Programming the firmware
 
 If you have cloned the repository as described in the step above and you also have avr-gcc and make installed then the steps are as follows
 
