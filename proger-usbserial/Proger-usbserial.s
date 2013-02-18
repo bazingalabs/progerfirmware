@@ -17,7 +17,7 @@ __zero_reg__ = 1
 .global	SetupHardware
 	.type	SetupHardware, @function
 SetupHardware:
-.LFB86:
+.LFB91:
 .LSM0:
 /* prologue: function */
 /* frame size = 0 */
@@ -84,13 +84,13 @@ SetupHardware:
 /* epilogue start */
 .LSM15:
 	ret
-.LFE86:
+.LFE91:
 	.size	SetupHardware, .-SetupHardware
 	.section	.text.main,"ax",@progbits
 .global	main
 	.type	main, @function
 main:
-.LFB85:
+.LFB90:
 .LSM16:
 	push r14
 	push r15
@@ -580,13 +580,13 @@ main:
 .LBE173:
 .LSM98:
 	rjmp .L15
-.LFE85:
+.LFE90:
 	.size	main, .-main
 	.section	.text.EVENT_USB_Device_ConfigurationChanged,"ax",@progbits
 .global	EVENT_USB_Device_ConfigurationChanged
 	.type	EVENT_USB_Device_ConfigurationChanged, @function
 EVENT_USB_Device_ConfigurationChanged:
-.LFB87:
+.LFB92:
 .LSM99:
 /* prologue: function */
 /* frame size = 0 */
@@ -599,13 +599,13 @@ EVENT_USB_Device_ConfigurationChanged:
 /* epilogue start */
 .LSM101:
 	ret
-.LFE87:
+.LFE92:
 	.size	EVENT_USB_Device_ConfigurationChanged, .-EVENT_USB_Device_ConfigurationChanged
 	.section	.text.EVENT_USB_Device_UnhandledControlRequest,"ax",@progbits
 .global	EVENT_USB_Device_UnhandledControlRequest
 	.type	EVENT_USB_Device_UnhandledControlRequest, @function
 EVENT_USB_Device_UnhandledControlRequest:
-.LFB88:
+.LFB93:
 .LSM102:
 /* prologue: function */
 /* frame size = 0 */
@@ -618,13 +618,13 @@ EVENT_USB_Device_UnhandledControlRequest:
 /* epilogue start */
 .LSM104:
 	ret
-.LFE88:
+.LFE93:
 	.size	EVENT_USB_Device_UnhandledControlRequest, .-EVENT_USB_Device_UnhandledControlRequest
 	.section	.text.EVENT_CDC_Device_LineEncodingChanged,"ax",@progbits
 .global	EVENT_CDC_Device_LineEncodingChanged
 	.type	EVENT_CDC_Device_LineEncodingChanged, @function
 EVENT_CDC_Device_LineEncodingChanged:
-.LFB89:
+.LFB94:
 .LSM105:
 .LVL49:
 	push r28
@@ -722,13 +722,13 @@ EVENT_CDC_Device_LineEncodingChanged:
 	pop r28
 .LVL58:
 	ret
-.LFE89:
+.LFE94:
 	.size	EVENT_CDC_Device_LineEncodingChanged, .-EVENT_CDC_Device_LineEncodingChanged
-	.section	.text.__vector_23,"ax",@progbits
-.global	__vector_23
-	.type	__vector_23, @function
-__vector_23:
-.LFB90:
+	.section	.text.__vector_25,"ax",@progbits
+.global	__vector_25
+	.type	__vector_25, @function
+__vector_25:
+.LFB95:
 .LSM124:
 	push __zero_reg__
 	push r0
@@ -820,13 +820,13 @@ __vector_23:
 	pop r0
 	pop __zero_reg__
 	reti
-.LFE90:
-	.size	__vector_23, .-__vector_23
+.LFE95:
+	.size	__vector_25, .-__vector_25
 	.section	.text.EVENT_CDC_Device_ControLineStateChanged,"ax",@progbits
 .global	EVENT_CDC_Device_ControLineStateChanged
 	.type	EVENT_CDC_Device_ControLineStateChanged, @function
 EVENT_CDC_Device_ControLineStateChanged:
-.LFB91:
+.LFB96:
 .LSM136:
 .LVL66:
 /* prologue: function */
@@ -847,7 +847,7 @@ EVENT_CDC_Device_ControLineStateChanged:
 .LSM140:
 	sbi 43-32,7
 	ret
-.LFE91:
+.LFE96:
 	.size	EVENT_CDC_Device_ControLineStateChanged, .-EVENT_CDC_Device_ControLineStateChanged
 .global	VirtualSerial_CDC_Interface
 	.data
@@ -892,56 +892,56 @@ CSWTCH.16:
 	.long	.LEFDE0-.LASFDE0
 .LASFDE0:
 	.long	.Lframe0
-	.long	.LFB86
-	.long	.LFE86-.LFB86
+	.long	.LFB91
+	.long	.LFE91-.LFB91
 	.p2align	2
 .LEFDE0:
 .LSFDE2:
 	.long	.LEFDE2-.LASFDE2
 .LASFDE2:
 	.long	.Lframe0
-	.long	.LFB85
-	.long	.LFE85-.LFB85
+	.long	.LFB90
+	.long	.LFE90-.LFB90
 	.p2align	2
 .LEFDE2:
 .LSFDE4:
 	.long	.LEFDE4-.LASFDE4
 .LASFDE4:
 	.long	.Lframe0
-	.long	.LFB87
-	.long	.LFE87-.LFB87
+	.long	.LFB92
+	.long	.LFE92-.LFB92
 	.p2align	2
 .LEFDE4:
 .LSFDE6:
 	.long	.LEFDE6-.LASFDE6
 .LASFDE6:
 	.long	.Lframe0
-	.long	.LFB88
-	.long	.LFE88-.LFB88
+	.long	.LFB93
+	.long	.LFE93-.LFB93
 	.p2align	2
 .LEFDE6:
 .LSFDE8:
 	.long	.LEFDE8-.LASFDE8
 .LASFDE8:
 	.long	.Lframe0
-	.long	.LFB89
-	.long	.LFE89-.LFB89
+	.long	.LFB94
+	.long	.LFE94-.LFB94
 	.p2align	2
 .LEFDE8:
 .LSFDE10:
 	.long	.LEFDE10-.LASFDE10
 .LASFDE10:
 	.long	.Lframe0
-	.long	.LFB90
-	.long	.LFE90-.LFB90
+	.long	.LFB95
+	.long	.LFE95-.LFB95
 	.p2align	2
 .LEFDE10:
 .LSFDE12:
 	.long	.LEFDE12-.LASFDE12
 .LASFDE12:
 	.long	.Lframe0
-	.long	.LFB91
-	.long	.LFE91-.LFB91
+	.long	.LFB96
+	.long	.LFE96-.LFB96
 	.p2align	2
 .LEFDE12:
 	.text
@@ -967,7 +967,7 @@ CSWTCH.16:
 	.byte	0x31
 	.byte	0x9f
 	.long	.LVL4
-	.long	.LFE85
+	.long	.LFE90
 	.word	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -987,7 +987,7 @@ CSWTCH.16:
 	.byte	0x31
 	.byte	0x9f
 	.long	.LVL9
-	.long	.LFE85
+	.long	.LFE90
 	.word	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -1086,7 +1086,7 @@ CSWTCH.16:
 	.byte	0x31
 	.byte	0x9f
 	.long	.LVL13
-	.long	.LFE85
+	.long	.LFE90
 	.word	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -1137,7 +1137,7 @@ CSWTCH.16:
 	.byte	0x31
 	.byte	0x9f
 	.long	.LVL23
-	.long	.LFE85
+	.long	.LFE90
 	.word	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -1214,7 +1214,7 @@ CSWTCH.16:
 	.byte	0x31
 	.byte	0x9f
 	.long	.LVL39
-	.long	.LFE85
+	.long	.LFE90
 	.word	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -1345,7 +1345,7 @@ CSWTCH.16:
 	.word	0x1
 	.byte	0x6c
 	.long	.LVL58
-	.long	.LFE89
+	.long	.LFE94
 	.word	0x2
 	.byte	0x8
 	.byte	0xca
@@ -1410,7 +1410,7 @@ CSWTCH.16:
 	.byte	0x93
 	.uleb128 0x1
 	.long	.LVL67
-	.long	.LFE91
+	.long	.LFE96
 	.word	0x6
 	.byte	0x6e
 	.byte	0x93
@@ -1432,7 +1432,7 @@ CSWTCH.16:
 	.byte	0x1a
 	.byte	0x9f
 	.long	.LVL67
-	.long	.LFE91
+	.long	.LFE96
 	.word	0x7
 	.byte	0x8e
 	.sleb128 13
@@ -2110,8 +2110,8 @@ CSWTCH.16:
 	.byte	0x1
 	.byte	0x8b
 	.byte	0x1
-	.long	.LFB86
-	.long	.LFE86
+	.long	.LFB91
+	.long	.LFE91
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
@@ -2145,8 +2145,8 @@ CSWTCH.16:
 	.byte	0x50
 	.byte	0x1
 	.long	0x4d
-	.long	.LFB85
-	.long	.LFE85
+	.long	.LFB90
+	.long	.LFE90
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
@@ -2542,8 +2542,8 @@ CSWTCH.16:
 	.byte	0x1
 	.byte	0x9f
 	.byte	0x1
-	.long	.LFB87
-	.long	.LFE87
+	.long	.LFB92
+	.long	.LFE92
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
@@ -2554,8 +2554,8 @@ CSWTCH.16:
 	.byte	0x1
 	.byte	0xa5
 	.byte	0x1
-	.long	.LFB88
-	.long	.LFE88
+	.long	.LFB93
+	.long	.LFE93
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
@@ -2566,8 +2566,8 @@ CSWTCH.16:
 	.byte	0x1
 	.byte	0xae
 	.byte	0x1
-	.long	.LFB89
-	.long	.LFE89
+	.long	.LFB94
+	.long	.LFE94
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
@@ -2597,8 +2597,8 @@ CSWTCH.16:
 	.byte	0x1
 	.byte	0xde
 	.byte	0x1
-	.long	.LFB90
-	.long	.LFE90
+	.long	.LFB95
+	.long	.LFE95
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
@@ -2651,8 +2651,8 @@ CSWTCH.16:
 	.byte	0x1
 	.byte	0xea
 	.byte	0x1
-	.long	.LFB91
-	.long	.LFE91
+	.long	.LFB96
+	.long	.LFE96
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
@@ -3336,7 +3336,7 @@ CSWTCH.16:
 	.long	0x952
 	.string	"EVENT_CDC_Device_LineEncodingChanged"
 	.long	0x995
-	.string	"__vector_23"
+	.string	"__vector_25"
 	.long	0xa16
 	.string	"EVENT_CDC_Device_ControLineStateChanged"
 	.long	0xa87
@@ -3380,20 +3380,20 @@ CSWTCH.16:
 	.byte	0x0
 	.word	0x0
 	.word	0x0
-	.long	.LFB86
-	.long	.LFE86-.LFB86
-	.long	.LFB85
-	.long	.LFE85-.LFB85
-	.long	.LFB87
-	.long	.LFE87-.LFB87
-	.long	.LFB88
-	.long	.LFE88-.LFB88
-	.long	.LFB89
-	.long	.LFE89-.LFB89
-	.long	.LFB90
-	.long	.LFE90-.LFB90
 	.long	.LFB91
 	.long	.LFE91-.LFB91
+	.long	.LFB90
+	.long	.LFE90-.LFB90
+	.long	.LFB92
+	.long	.LFE92-.LFB92
+	.long	.LFB93
+	.long	.LFE93-.LFB93
+	.long	.LFB94
+	.long	.LFE94-.LFB94
+	.long	.LFB95
+	.long	.LFE95-.LFB95
+	.long	.LFB96
+	.long	.LFE96-.LFB96
 	.long	0x0
 	.long	0x0
 	.section	.debug_ranges,"",@progbits
@@ -3424,20 +3424,20 @@ CSWTCH.16:
 	.long	.LBE193
 	.long	0x0
 	.long	0x0
-	.long	.LFB86
-	.long	.LFE86
-	.long	.LFB85
-	.long	.LFE85
-	.long	.LFB87
-	.long	.LFE87
-	.long	.LFB88
-	.long	.LFE88
-	.long	.LFB89
-	.long	.LFE89
-	.long	.LFB90
-	.long	.LFE90
 	.long	.LFB91
 	.long	.LFE91
+	.long	.LFB90
+	.long	.LFE90
+	.long	.LFB92
+	.long	.LFE92
+	.long	.LFB93
+	.long	.LFE93
+	.long	.LFB94
+	.long	.LFE94
+	.long	.LFB95
+	.long	.LFE95
+	.long	.LFB96
+	.long	.LFE96
 	.long	0x0
 	.long	0x0
 	.section	.debug_line
@@ -3617,7 +3617,7 @@ CSWTCH.16:
 	.byte	0x0
 	.uleb128 0x5
 	.byte	0x2
-	.long	.LFE86
+	.long	.LFE91
 	.byte	0x0
 	.uleb128 0x1
 	.byte	0x1
@@ -4181,7 +4181,7 @@ CSWTCH.16:
 	.byte	0x0
 	.uleb128 0x5
 	.byte	0x2
-	.long	.LFE85
+	.long	.LFE90
 	.byte	0x0
 	.uleb128 0x1
 	.byte	0x1
@@ -4203,7 +4203,7 @@ CSWTCH.16:
 	.byte	0x0
 	.uleb128 0x5
 	.byte	0x2
-	.long	.LFE87
+	.long	.LFE92
 	.byte	0x0
 	.uleb128 0x1
 	.byte	0x1
@@ -4225,7 +4225,7 @@ CSWTCH.16:
 	.byte	0x0
 	.uleb128 0x5
 	.byte	0x2
-	.long	.LFE88
+	.long	.LFE93
 	.byte	0x0
 	.uleb128 0x1
 	.byte	0x1
@@ -4327,7 +4327,7 @@ CSWTCH.16:
 	.byte	0x0
 	.uleb128 0x5
 	.byte	0x2
-	.long	.LFE89
+	.long	.LFE94
 	.byte	0x0
 	.uleb128 0x1
 	.byte	0x1
@@ -4410,7 +4410,7 @@ CSWTCH.16:
 	.byte	0x0
 	.uleb128 0x5
 	.byte	0x2
-	.long	.LFE90
+	.long	.LFE95
 	.byte	0x0
 	.uleb128 0x1
 	.byte	0x1
@@ -4444,7 +4444,7 @@ CSWTCH.16:
 	.byte	0x0
 	.uleb128 0x5
 	.byte	0x2
-	.long	.LFE91
+	.long	.LFE96
 	.byte	0x0
 	.uleb128 0x1
 	.byte	0x1
@@ -4459,7 +4459,7 @@ CSWTCH.16:
 .LASF93:
 	.string	"__iCliRetVal"
 .LASF82:
-	.string	"__vector_23"
+	.string	"__vector_25"
 .LASF10:
 	.string	"long long unsigned int"
 .LASF61:
@@ -4526,8 +4526,8 @@ CSWTCH.16:
 	.string	"DEVICE_STATE_Configured"
 .LASF22:
 	.string	"CDC_LineEncodingParity_t"
-.LASF92:
-	.string	"/Users/erikkallen/Projects/Proger/proger-usbserial"
+.LASF48:
+	.string	"Config"
 .LASF78:
 	.string	"EVENT_USB_Device_UnhandledControlRequest"
 .LASF67:
@@ -4554,8 +4554,6 @@ CSWTCH.16:
 	.string	"DEVICE_STATE_Addressed"
 .LASF12:
 	.string	"DEVICE_STATE_Powered"
-.LASF48:
-	.string	"Config"
 .LASF32:
 	.string	"DataINEndpointDoubleBank"
 .LASF76:
@@ -4572,6 +4570,8 @@ CSWTCH.16:
 	.string	"unsigned char"
 .LASF65:
 	.string	"DoubleSpeed"
+.LASF92:
+	.string	"/Users/erikkallen/p/progerfirmware/proger-usbserial"
 .LASF37:
 	.string	"NotificationEndpointSize"
 .LASF59:

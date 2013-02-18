@@ -48,8 +48,8 @@
 
 
 # MCU name
-MCU = atmega32u2
-MCU_AVRDUDE = m32u2
+MCU = atmega32u4
+MCU_AVRDUDE = m32u4
 #at90usb82
 
 # Specify the Arduino model using the assigned PID.  This is used by Descriptors.c
